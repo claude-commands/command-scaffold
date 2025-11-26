@@ -14,7 +14,7 @@ ln -s <clone-path>/command-scaffold/scaffold.md ~/.claude/commands/scaffold.md
 
 ## Usage
 
-```
+```text
 /scaffold component Button     # React/Vue component
 /scaffold api users            # API endpoint with CRUD
 /scaffold model User           # Database model

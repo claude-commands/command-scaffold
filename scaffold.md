@@ -12,6 +12,7 @@ Show available scaffold types and usage.
 **Usage:** `/scaffold <type> <name>`
 
 **Examples:**
+
 - `/scaffold component Button` - React/Vue component
 - `/scaffold api users` - API endpoint with CRUD
 - `/scaffold model User` - Database model
@@ -20,6 +21,7 @@ Show available scaffold types and usage.
 - `/scaffold service payment` - Service class
 
 **Workflow:**
+
 1. Detect project framework and patterns
 2. Generate files following conventions
 3. Add tests if applicable
@@ -36,6 +38,7 @@ Generate scaffolding for the specified type and name.
 ## Configuration
 
 Parse arguments:
+
 - **Type**: First word (component, api, model, etc.)
 - **Name**: Second word (the thing to create)
 - **Options**: Additional flags
@@ -85,6 +88,7 @@ Parse arguments:
    ### Component (React/Vue)
 
    **React Component:**
+
    ```typescript
    // src/components/Button/Button.tsx
    import React from 'react';
@@ -116,6 +120,7 @@ Parse arguments:
    ```
 
    **Style file:**
+
    ```css
    /* src/components/Button/Button.module.css */
    .button {
@@ -136,6 +141,7 @@ Parse arguments:
    ```
 
    **Test file:**
+
    ```typescript
    // src/components/Button/Button.test.tsx
    import { render, screen, fireEvent } from '@testing-library/react';
@@ -157,6 +163,7 @@ Parse arguments:
    ```
 
    **Index file:**
+
    ```typescript
    // src/components/Button/index.ts
    export { Button } from './Button';
@@ -168,6 +175,7 @@ Parse arguments:
    ### API Endpoint
 
    **Express Route:**
+
    ```typescript
    // src/routes/users.ts
    import { Router } from 'express';
@@ -238,6 +246,7 @@ Parse arguments:
    ### Database Model
 
    **Prisma Model:**
+
    ```prisma
    // Add to schema.prisma
    model User {
@@ -250,6 +259,7 @@ Parse arguments:
    ```
 
    **TypeORM Entity:**
+
    ```typescript
    // src/models/User.ts
    import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
